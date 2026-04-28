@@ -288,7 +288,7 @@ function run_tests() {
         "ceph_test_rados_api_snapshots_pp.exe"=`
             # EOLDSNAPC is defined as 85, which overlaps with ERESTART,
             # which will be converted to EINTR
-            "LibRadosSnapshotsSelfManagedPP.OrderSnap";
+            "LibRadosSnapshotsSelfManagedPP.OrderSnap*";
         # cls_helo.cc:write_return_data returns 42, which will be converted
         # TODO: ensure that this won't affect the rados/rbd (e.g. we may
         # end up converting values other than error codes, which is wrong).
